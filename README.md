@@ -21,7 +21,7 @@ Copyright:
          github : http://everpeace.github.com
          twitter: http://twitter.com/everpeace
 
-Licence:
+License:
 ----------------------
-MIT Licence.
+MIT License. see also LICENSE.txt.
 
