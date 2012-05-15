@@ -44,14 +44,14 @@ list_users(){
 check_git_ssh(){
   if echo $GIT_SSH |grep -q "$GITHUB_KEYS_DIR/.gitsshm/"
   then
-    echo 'detected GIT_SSH is maintained by chgitssh.'
+    echo 'detected GIT_SSH is maintained by gitsshm.'
   else
     print_current_git_ssh
-    echo 'WARNING: GIT_SSH may not be maintained by chgitssh.  GIT_SSH will be overwritten.'
+    echo 'WARNING: GIT_SSH may not be maintained by gitsshm.  GIT_SSH will be overwritten.'
 #    case $1 in
-#      setup)   echo 'WARNING: GIT_SSH may not be maintained by chgitssh.  GIT_SSH will be overwritten.'
+#      setup)   echo 'WARNING: GIT_SSH may not be maintained by gitsshm.  GIT_SSH will be overwritten.'
 #               print_current_git_ssh;;
-#      *)       echo 'ERROR: GIT_SSH may not be maintained by chgitssh. setup first.'
+#      *)       echo 'ERROR: GIT_SSH may not be maintained by gitsshm. setup first.'
 #               return 2 > /dev/null
 #               exit;;
 #    esac
