@@ -133,9 +133,9 @@ switch(){
   fi
 }
 
-SSH_ADD=`which ssh-add`
-SSH=`which ssh`
-LS=`which ls`
+SSH_ADD=`where ssh-add| grep "^/" | head -1`
+SSH=`where ssh | grep "^/" | head -1`
+LS=`where ls| grep "^/" | head -1`
 
 action="$1"
 
