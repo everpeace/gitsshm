@@ -144,7 +144,7 @@ if [ -z "${action}" ]; then
 else
   case "${action}" in
     -h|help)          usage;;
-    -u|setup)         if [ $# == 1 ]; then
+    -u|setup)         if [ $# -eq 1 ]; then
                         setup
                         echo ''
                         echo 'Now you can switch GIT_SSH by -s action for available usernames:'
@@ -152,12 +152,12 @@ else
                       else
                         usage
                       fi ;;
-    -r|reset)         if [ $# == 1 ]; then
+    -r|reset)         if [ $# -eq 1 ]; then
                         reset
                       else
                         usage
                       fi ;;
-    -l|list)          if [ $# == 1 ]; then
+    -l|list)          if [ $# -eq 1 ]; then
                          echo 'available usernames:'
                          list_users
                       else
