@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # place keys in $HOME/.gitssh-keys/{username}/
 if [ -z $GITHUB_KEYS_DIR ]; then
   GITHUB_KEYS_DIR="$HOME/.gitssh-keys"
